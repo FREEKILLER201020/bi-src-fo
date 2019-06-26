@@ -1,12 +1,12 @@
 -- ------Project's queries------
--- CREATE TABLE rates(
---   id serial NOT NULL,
---   date date,
---   currency integer DEFAULT 0,
---   rate double precision DEFAULT 0,
---   CONSTRAINT rates_pkey PRIMARY KEY (id)
--- )WITH OIDS;
---
+CREATE TABLE rates(
+  id serial NOT NULL,
+  date date,
+  currency integer DEFAULT 0,
+  rate double precision DEFAULT 0,
+  CONSTRAINT rates_pkey PRIMARY KEY (id)
+)WITH OIDS;
+
 -- CREATE TABLE rates_local(
 --   id serial NOT NULL,
 --   date date,
@@ -14,7 +14,7 @@
 --   rate double precision DEFAULT 0,
 --   CONSTRAINT rates_local_pkey PRIMARY KEY (id)
 -- )WITH OIDS;
---
+
 -- DROP TABLE partners;
 CREATE TABLE partners(
   id serial NOT NULL,

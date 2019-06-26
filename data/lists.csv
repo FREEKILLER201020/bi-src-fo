@@ -1,0 +1,21 @@
+id;name;alias
+0;None;None
+1;Loans;loans
+2;Partners;partners
+3;Transaction;transactions
+4;Accounts;accounts
+5;Actions;actions
+6;Currency;currency
+9;Blockings;blockings
+13;Events;Events
+14;Comments;Comments
+15;Document Groups;Document Groups
+16;Documents;Documents
+17;Document Actions;Document Actions
+18;Document Routes;Document Routes
+24;ISO Codes;isocodes
+27;PAIN Status Codes;paincodes
+34;CorrBanks;CorrBanks
+35;Jurisdictions;Jurisdictions
+57;Roles;link_roles
+100;Countries;country

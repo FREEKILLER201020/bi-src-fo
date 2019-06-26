@@ -1,0 +1,421 @@
+id;name;alias;list_id;qty;default_value;values;descr;addinfo;text1;text2;num1;num2
+300;Normal;Normal;3;0;f;;;;;;0;0
+301;Transfer;Transfer;3;0;f;;;;;;0;0
+302;Exchange;Exchange;3;0;f;;;;;;0;0
+303;Internal;Internal;3;0;f;;;;;;0;0
+304;Interest;Interest;3;0;f;;;;;;0;0
+305;Fees;Fees;3;0;f;;;;;;0;0
+306;Withdrawal;Withdrawal;3;0;f;;;;;;0;0
+307;Buy;Buy;3;0;f;;;;;;0;0
+308;Sale;Sale;3;0;f;;;;;;0;0
+309;Payment;Payment;3;0;f;;;;;;0;0
+310;Undefined;Undefined;3;0;f;;;;;;0;0
+311;Coupon;Coupon;3;0;f;;;;;;0;0
+312;Loan;Loan;3;0;f;;;;;;0;0
+313;Return;Return;3;0;f;;;;;;0;0
+314;Inward;Inward;3;0;f;;;;;;0;0
+315;Outward;Outward;3;0;f;;;;;;0;0
+316;Redemption;Redemption;3;0;f;;;;;;0;0
+317;Adjustment;Adjustment;3;0;f;;;;;;0;0
+318;Cheque;Cheque;3;0;f;;;;;;0;0
+320;Issue;Issue;3;0;f;;;;;;0;0
+321;Dividends;Dividends;3;0;f;;;;;;0;0
+322;Clear;Clear;3;0;f;;;;;;0;0
+323;Instruction;Instruction;3;0;f;;;;;;0;0
+324;Reverse;Reverse;3;0;f;;;;;;0;0
+325;Securities;Securities;3;0;f;;;;;;0;0
+326;Repo;Repo;3;0;f;;;;;;0;0
+327;Addressing;Addressing;3;0;f;;;;;;0;0
+328;Deposit;Deposit;3;0;f;;;;;;0;0
+329;Cash;Cash;3;0;f;;;;;;0;0
+330;Tax;Tax;3;0;f;;;;;;0;0
+331;Uncleared;Uncleared;3;0;f;;;;;;0;0
+332;Shareholders Grant;Shareholders Grant;3;0;f;;;;;;0;0
+333;Services;Services;3;0;f;;;;;;0;0
+334;Salary;Salary;3;0;f;;;;;;0;0
+335;Margin Call;;3;0;f;;;;;;0;0
+336;Share Capital;;3;0;f;;;;;;0;0
+400;Current acc;Current;4;0;f;;;;;;0;0
+401;Collection acc;Collection acc;4;0;f;;;;;;0;0
+402;Credit acc;Credit acc;4;0;f;;;;;;0;0
+403;Margin acc;Margin acc;4;0;f;;;;;;0;0
+404;L/C account;L/C account;4;0;f;;;;;;0;0
+500;Insert;insert;5;0;t;;;;;;0;0
+501;Update;update;5;0;f;;;;;;0;0
+502;Delete;delete;5;0;f;;;;;;0;0
+503;View;view;5;0;f;;;;;;0;0
+504;Any;any;5;0;f;;;;;;0;0
+1300;Common;Common;13;0;f;;;;;;0;0
+1301;Appoint Director;Appoint Director;13;0;f;;;;;;0;0
+1302;Change Address;Change Address;13;0;f;;;;;;0;0
+1303;Change Limit;Change Limit;13;0;f;;;;;;0;0
+1304;Change Capital;Change Capital;13;0;f;;;;;;0;0
+1305;Appoint Secretary;Appoint Secretary;13;0;f;;;;;;0;0
+1306;Change Shareholder;Change Shareholder;13;1;f;;;;;;0;0
+1307;Change Auth. Person;Change Auth. Person;13;0;f;;;;;;0;0
+1308;Appoint Signatory;Appoint Signatory;13;1;f;;;;;;0;0
+1309;Appoint Attorney;Appoint Attorney;13;0;f;;;;;;0;0
+1310;Dissolution of the Company;Dissolution of the Company;13;0;f;;;;;;0;0
+1311;Issue Shares;Issue Shares;13;0;f;;;;;;0;0
+1312;Transfer of shares;Transfer of shares;13;1;f;;;;;;0;0
+1313;Bank Client Software;Bank Client Software;13;0;f;;;;;;0;0
+1314;Company Redomiciliation;Company Redomiciliation;13;0;f;;;;;;0;0
+1315;Lost Contact;Lost Contact;13;0;f;;;;;;0;0
+1316;Reduce Shares;;13;0;f;;;;;;0;0
+1321;Organize;Organize;13;0;f;;;;;;0;0
+1323;Check;Check;13;0;f;;;;;;0;0
+1324;Collect KYC data;Collect KYC data;13;0;f;;;;;;0;0
+1332;Pay;Pay;13;0;f;;;;;;0;0
+1335;Sent to Client;Sent to Client;13;0;f;;;;;;0;0
+1340;Accounting in Progress;Accounting in Progress;13;0;f;W;;;;;0;0
+1341;Accounting Complete;Accounting Complete;13;0;f;AC;;;;;0;0
+1342;Audit Draft Received;Audit Draft Received;13;0;f;AD;;;;;0;0
+1343;Audit Draft Confirmed;Audit Draft Confirmed;13;0;f;ADC;;;;;0;0
+1344;Audit Complete;Audit Complete;13;0;f;A;;;;;0;0
+1345;Liquidation Audit Report;Liquidation Audit Report;13;0;f;AL;;;;;0;0
+1346;Audited Strike off;Audited Strike off;13;0;f;AS;;;;;0;0
+1347;Management Financial Statement;Management Financial Statement;13;0;f;MFS;;;;;0;0
+1348;Strike off of the Company;Strike off of the Company;13;0;f;SO;;;;;0;0
+1349;Company Sold;Company Sold;13;0;f;CS;;;;;0;0
+1350;Voluntary Liquidation;Voluntary Liquidation;13;0;f;L;;;;;0;0
+1351;Restoration of the company;Restoration of the company;13;0;f;;;;;;0;0
+1352;Sent for Liquidation / Strike-off;Sent for Liquidation;13;0;f;;;;;;0;0
+1371;Name reserved in Registry;Name reserved in Registry;13;0;f;;;;;;0;0
+1372;Reserved;Reserved;13;0;f;;;;;;0;0
+1373;Incorporation;Incorporation;13;0;f;;;;;;0;0
+1375;New Company;New Company;13;1;f;;;;;;0;0
+1376;Change UBO;Change UBO;13;1;f;;;;;;0;0
+1377;Open Bank Account;Open Bank Account;13;0;f;;;;;;0;0
+1378;ORD;ORD;13;0;f;;;;;;0;0
+1379;Company under incorporation;Company under incorporation;13;0;f;;;;;;0;0
+1380;Company under name approval;Company under name approval;13;0;f;;;;;;0;0
+1381;Check Transaction;Check Transaction;13;0;f;;;;;;0;0
+1382;Change Name;Change Name;13;0;f;;;;;;0;0
+1383;Transfer of the Company;Transfer of the Company;13;802;f;;;;;;0;0
+1384;Dissolution Candidate;Dissolution Candidate;13;0;f;;;;;;0;0
+1385;Salary;Salary;13;0;f;;;;;;0;0
+1386;Life Insurance;Life Insurance;13;0;f;;;;;;0;0
+1387;Close Account with RCB;Close Account with RCB;13;742;f;;;;;;0;0
+1388;Change Administrator;Change Administrator;13;1;f;;;;;;0;0
+1389;Charge;charge;13;0;f;;;;;;0;0
+1390;Extra income;extra_income;13;0;f;;;;;;0;0
+1398;Remark;Remark;13;0;f;;;;;;0;0
+1399;Meetings;Meetings;13;0;f;;;;;;0;0
+1400;Comment;Comment;14;0;f;;;;;;0;0
+1401;Order;Order;14;0;f;;;;;;0;0
+1402;Request;Request;14;0;f;;;;;;0;0
+1403;Reply;Reply;14;0;f;;;;;;0;0
+1404;Excuse;Excuse;14;0;f;;;;;;0;0
+1405;Confirmation;Confirmation;14;0;f;;;;;;0;0
+1500;General;General;15;0;f;;;;;;0;0
+1501;Internal or ORD;ORD;15;0;f;1652;;;;;0;0
+1502;Invoices;Invoices;15;0;f;;;;;;0;0
+1503;Incorporation;Incorporation;15;0;f;1612,1613,1614,1616,1620,1621,1624,1625,1626,1627,1628,1631,1667,1642,1685,1686,1687,1689,1690,1691,1692, 1694;;;;;0;0
+1505;Trusts and Indemnities;Trusts and Indemnities;15;0;f;1630,1604,1693,1695,1650;;;;;0;0
+1506;Contracts Documented;Contracts Documented;15;0;f;1607,1608,1622,1623,1641,1654,1659,1680,1684;;;;;0;0
+1507;Personal Documents;Personal Documents;15;0;f;1688,1687,1696,1697,1681,1601,1609,1644;;;;;0;0
+1508;Power of Attorneys;Power of Attorneys;15;0;f;1618,1698;;;;;0;0
+1509;Deactivated;;15;0;f;1635;;;;;0;0
+1510;Undefined;undefined;15;0;f;;;;;;0;0
+1511;BVI KYC;;15;0;f;;;;;;0;0
+1512;Bank Forms;Bank Forms;15;0;f;;;;;;0;0
+1600;Document;Document;16;0;f;;;;;deactivated;0;0
+1601;Passport External or Travel ;External / Travel Passport;16;0;f;;;;External / Travel Passport;;1507;0
+1602;Invoice;Invoice;16;0;f;;;;Invoice;;1502;0
+1603;Letter;Letter;16;0;f;;;;Letter;;1500;0
+1604;Indemnity;Indemnity;16;0;f;;;;Indemnity;;1503;0
+1605;Message;Message;16;0;f;;;;;deactivated;0;0
+1607;Loan Agreement;Loan Agreement;16;0;f;;;;Loan Agreement;;1506;0
+1608;Additional / Amendment Agreement;Additional Agreement;16;0;f;;;;Additional Agreement;;1506;0
+1609;Bank or Professional reference;Bank / Professional reference;16;0;f;;;;Bank / Professional reference;;1507;0
+1610;Undefined;indefined;16;0;f;;;;;;1510;0
+1611;REPO;REPO;16;0;f;;;;REPO;;1506;0
+1612;Incorporation Documents;Incorporation Documents;16;0;f;;;;Incorporation Documents;;1503;0
+1613;Certificate of Registered Office;Certificate of Registered Office;16;0;f;;;;Certificate of Registered Office;;1503;0
+1614;Certificate of Directors and Secretary;Certificate of Directors and Secretary;16;0;f;;;;Certificate of Directors and Secretary;;1503;0
+1615;Confirmations, Cerification (Other);CONFIRMATION;16;0;f;;;;CONFIRMATION;;1506;0
+1616;Certificate of Incorporation;Certificate of Incorporation;16;0;f;;;;Certificate of Incorporation;;1503;0
+1617;Resolutions;Resolutions;16;0;f;;;;;deactivated;0;0
+1618;Power of Attorney (General);Power of Attorney;16;0;f;;;;Power of Attorney;;1508;0
+1619;Report and Financial Statements;Report and Finansial Statement;16;0;f;;;;Report and Finansial Statement;;1500;0
+1620;Certificate of Shareholders;Certificate of Shareholders;16;0;f;;;;Certificate of Shareholders;;1503;0
+1621;Shares Certificate;Share Certificate;16;0;f;;;;Share Certificate;;1503;0
+1622;Other Contracts and Agreements;Agreement;16;0;f;;;;Agreement;;1506;0
+1624;Memorandum and Articles of Association;Memorandum and Articles;16;0;f;;;;Memorandum and Articles;;1503;0
+1625;Certificate of Good Standing;Certificate of Good Standing;16;0;f;;;;Certificate of Good Standing;;1503;0
+1626;Specimen Signatures Card;Specimen Signatures Card;16;0;f;;;;Specimen Signatures Card;;1503;0
+1627;Tax Certificates;Tax Certificate;16;0;f;;;;Tax Certificate;;1503;0
+1628;Certificate of Incumbency;Certificate of Incumbency;16;0;f;;;;Certificate of Incumbency;;1503;0
+1629;Sale and Purchase Agr.;Sale and Purchase Agr.;16;0;f;;;;Sale and Purchase Agr.;;1506;0
+1630;Trust deed;Trust deed;16;0;f;;;;Trust deed;;1505;0
+1631;Instrument of Transfer;Instrument of Transfer;16;0;f;;;;Instrument of Transfer;;1503;0
+1633;Account Statement;Account Statement;16;0;f;;;;Account Statement;;1500;0
+1634;Transaction Document;Transaction Document;16;0;f;;;;;deactivated;0;0
+1635;Drafts;drafts;16;0;f;;;;;deactivated;0;0
+1638;РЕШЕНИЕ;РЕШЕНИЕ;16;0;f;;;;;deactivated;0;0
+1640;Акт;Акт;16;0;f;;;;;deactivated;0;0
+1642;Test Key;Test Key;16;0;f;;;;Test Key;;1503;0
+1643;Transfer;Transfer;16;0;f;;;;;deactivated;0;0
+1644;Translation;trans;16;0;f;;;;;deactivated;0;0
+1645;Debt assignment;DEBT ASSIGNMENT;16;0;f;;;;DEBT ASSIGNMENT;;1506;0
+1646;Notice;NOTICE;16;0;f;;;;NOTICE;;1500;0
+1648;Bank forms;Bank forms;16;0;f;;;;Bank forms;;1512;0
+1650;Transfer of ownership;TRANSFER OF OWNERSHIP;16;0;f;;;;TRANSFER OF OWNERSHIP;;1503;0
+1651;Client Review Form;Client Review Form;16;0;f;;;;Client Review Form;;1507;0
+1652;ORD;ОРД;16;0;f;;;;ОРД;;1501;0
+1653;Subscription application;SUBSCRIPTION APPLICATION;16;0;f;;;;SUBSCRIPTION APPLICATION;;1503;0
+1654;Agency Agreement;Agency Agreement;16;0;f;;;;Agency Agreement;;1506;0
+1655;Notice of drawdown;NOTICE OF DRAWDOWN;16;0;f;;;;NOTICE OF DRAWDOWN;;1506;0
+1656;Client Application Form;CLIENT APPLICATION FORM;16;0;f;;;;CLIENT APPLICATION FORM;;1507;0
+1657;Deed of indemnity;DEED OF INDEMNITY;16;0;f;;;;DEED OF INDEMNITY;;1503;0
+1658;Internal Order;Internal Order;16;0;f;;;;Internal Order;;1501;0
+1659;Tenancy Agreement;Tenancy Agreement;16;0;f;;;;Tenancy Agreement;;1506;0
+1661;Affidavit (on incorporation documents);Affidavit;16;0;f;;;;Affidavit;;1503;0
+1665;Declaration of Trust;Declaration of Trust;16;0;f;;;;Declaration of Trust;;1505;0
+1666;Legal Opinion;Legal Opinion;16;0;f;;;;Legal Opinion;;1500;0
+1667;Ownership structure;Ownership structure;16;0;f;;;;Ownership structure;;1507;0
+1669;Promissory Note;Promissory Notes ;16;0;f;;;;Promissory Notes ;;1500;0
+1670;Income tax return;Income tax return;16;0;f;;;;Income tax return;;1500;0
+1671;CV;CV;16;0;f;;;;CV;;1507;0
+1676;Declaration;DECLARATION;16;0;f;;;;DECLARATION;;1500;0
+1677;SWIFT;SWIFT;16;0;f;;;;SWIFT;;1500;0
+1678;Request;REQUEST;16;0;f;;;;REQUEST;;1500;0
+1680;Custody account agreement;CUSTODY ACCOUNT AGREEMENT;16;0;f;;;;CUSTODY ACCOUNT AGREEMENT;;1506;0
+1681;Utility Bill;Utility Bill;16;0;f;;;;Utility Bill;;1507;0
+1684;Settlement Agreement;Settlement Agreement;16;0;f;;;;Settlement Agreement;;1506;0
+1685;Resolution;Resolution;16;0;f;;;;;deactivated;0;0
+1687;Document;Document;16;0;f;;;;;deactivated;0;0
+1689;Certificate of Dissolution;Certificate of Dissolution;16;0;f;;;;Certificate of Dissolution;;1503;0
+1690;Certificate of registration of charge;Certificate of registration of charge;16;0;f;;;;Certificate of registration of charge;;1503;0
+1692;Register of Company;Register of Company;16;0;f;;;;Register of Company;;1503;0
+1693;Agreement of provision of services (SZC);Agreement of services;16;0;f;;;;Agreement of services;;1506;0
+1695;General;General;16;0;f;;;;;deactivated;0;0
+1696;KYC_AML;KYC_AML;16;0;f;;;;KYC_AML;;1507;0
+1697;Personal Questionarie;Personal Questionarie;16;0;f;;;;Personal Questionarie;;1507;0
+1698;Power of Attorney (Specific);POAS;16;0;f;;;;Power of Attorney (Specific);;1508;0
+1699;Annual Levy;Levy;16;0;f;;;;;;1503;0
+1001001;Advisory / Consultancy Agreement;;16;0;f;;;;;;1506;0
+1001002;Application;;16;0;f;;;;;;1500;0
+1001003;Assignment Agreement;;16;0;f;;;;;;1506;0
+1001004;Bill of Sale;;16;0;f;;;;;;1500;0
+1001005;Consent;;16;0;f;;;;;;1500;0
+1001006;Consent to act as Director/ Secretary;;16;0;f;;;;;;1503;0
+1001007;Minutes Corporate ;;16;0;f;;;;;;1503;0
+1001008;Resolutions Corporate ;;16;0;f;;;;;;1503;0
+1001009;Deposit Agreement;;16;0;f;;;;;;1506;0
+1001010;Distribution of dividends;;16;0;f;;;;;;1500;0
+1001011;Employment Agreement;;16;0;f;;;;;;1506;0
+1001012;Escrow Agreement;;16;0;f;;;;;;1506;0
+1001013;Evaluation Agreement;;16;0;f;;;;;;1506;0
+1001014;Evaluation Report;;16;0;f;;;;;;1500;0
+1001015;Exchange Agreement;;16;0;f;;;;;;1506;0
+1001016;Resolutions Executive ;;16;0;f;;;;;;1506;0
+1001017;Extract of Registrar of Companies (non CY);;16;0;f;;;;;;1503;0
+1001018;Facility agreement;;16;0;f;;;;;;1506;0
+1001019;Financing Agreement;;16;0;f;;;;;;1506;0
+1001020;GMRA;;16;0;f;;;;;;1506;0
+1001021;ID;;16;0;f;;;;;;1507;0
+1001022;Instruction;;16;0;f;;;;;;1500;0
+1001023;Internal Invoice;;16;0;f;;;;;;1500;0
+1001024;Inventory of Documents;;16;0;f;;;;;;1500;0
+1001025;Memorandum of Understanding;;16;0;f;;;;;;1506;0
+1001026;Mortgage / Charge Agreement;;16;0;f;;;;;;1506;0
+1001027;Passport National ;;16;0;f;;;;;;1507;0
+1001028;Netting (Net-off) Agreement;;16;0;f;;;;;;1506;0
+1001029;Novation Agreement;;16;0;f;;;;;;1506;0
+1001030;Option Agreement;;16;0;f;;;;;;1506;0
+1001031;Preliminary Agreement;;16;0;f;;;;;;1506;0
+1001032;Quotation;;16;0;f;;;;;;1500;0
+1001033;Rental Agreement;;16;0;f;;;;;;1506;0
+1001034;Report;;16;0;f;;;;;;1500;0
+1001035;Service Agreement;;16;0;f;;;;;;1506;0
+1001036;Shareholders Agreement;;16;0;f;;;;;;1506;0
+1001037;Sponsoring / Donation Agreement;;16;0;f;;;;;;1506;0
+1001038;Termination Agreement;;16;0;f;;;;;;1506;0
+1001039;Transfer & Acceptance certificate;;16;0;f;;;;;;1500;0
+1001040;Transport Services Agreement;;16;0;f;;;;;;1506;0
+1001041;Trust Agreement;;16;0;f;;;;;;1505;0
+1001042;Waiver agreement;;16;0;f;;;;;;1506;0
+1001043;Agreement of provision of services ;;16;0;f;;;;;;1506;0
+1001044;Assignment Agreement;;16;0;f;;;;;;1506;0
+1001045;Cerificate;;16;0;f;;;;;;1503;0
+1001046;Bank Advise;;16;0;f;;;;;;1503;0
+1001047;Insurance policies and agreements;;16;0;f;;;;;;1506;0
+1001048;Other personal documents;;16;0;f;;;;;;1507;0
+1001049;Seal imprint;;16;0;f;;;;;;1503;0
+1001050;Deed of Settlement;Deed of Settlement;16;0;f;;;;;;1505;0
+1700;Receive;Receive;17;0;f;;;;;;0;0
+1701;Send;Send;17;0;f;;;;;;0;0
+1702;Sign;Sign;17;0;f;;;;;;0;0
+1703;Apostile;Apostile;17;0;f;;;;;;0;0
+1704;Translate;Translate;17;0;f;;;;;;0;0
+1706;Archive;Archive;17;0;f;;;;;;0;0
+1710;Pay;Pay;17;0;f;;;;;;0;0
+1711;resign;resign;17;0;f;;;;;;0;0
+1715;Issue;Issue;17;0;f;;;;;;0;0
+1717;Reply;Reply;17;0;f;;;;;;0;0
+1718;Forward;Forward;17;0;f;;;;;;0;0
+1720;send for sign;send for sign;17;0;f;;;;;;0;0
+1721;send by email;send by email;17;0;f;;;;;;0;0
+1722;receive by email;receive by email;17;0;f;;;;;;0;0
+1723;request ;request ;17;0;f;;;;;;0;0
+1724;Whait for Decision;Whait for Decision;17;0;f;;;;;;0;0
+1725;Acknowlege;Acknowlege;17;0;f;;;;;;0;0
+1726;Issue an Invoice;Issue an Invoice;17;0;f;;;;;;0;0
+1727;Apostile;Apostile;17;0;f;;;;;;0;0
+1728;Order;Order;17;0;f;;;;;;0;0
+1729;Prepare;Prepare;17;0;f;;;;;;0;0
+1800;No actions;No actions;18;0;f;;;;;;0;0
+1801;Recieve;Recieve;18;0;f;1700;;;;;0;0
+1802;Recieve, Archive;Recieve, Archive;18;0;f;1700,1706;;;;;0;0
+1803;Recieve, Sign, Send, Archive;Recieve, Sign, Send, Archive;18;0;f;1700,1702,1701,1706;;;;;0;0
+1804;Recieve, Apostile, Send, Archive;Recieve, Apostile, Send, Archive;18;0;f;1700,1703,1701,1706;;;;;0;0
+1805;Recieve, Sign, Archive;Recieve, Sign, Archive;18;0;f;1700,1702,1706;;;;;0;0
+1806;Recieve, Pay, Archive;Recieve, Pay, Archive;18;0;f;1700,1710,1706;;;;;0;0
+1807;Issue, Send, Get Paid, Archive;Issue, Send, Get Paid, Archive;18;0;f;1715,1701,1716,1706;;;;;0;0
+1808;Issue, Sign, Send, Receive, Archive;Issue, Sign, Send, Receive, Archive;18;0;f;1715,1702,1701,1700,1706;;;;;0;0
+1809;Issue, Send, Receive, Send, Recieve, Archieve, Send;Issue, Send, Receive, Send, Recieve, Archieve, Send;18;0;f;1715,1701,1702,1700,1701,1700,1706,1701;;;;;0;0
+1810;No route (reserved);No route (reserved);18;0;f;;;;;;0;0
+1811;Sign, Archieve;Sign, Archieve;18;0;f;1702,1706;;;;;0;0
+1812;Send, Archieve;Send, Archieve;18;0;f;1701,1706;;;;;0;0
+1813;Order;Order;18;0;f;1728;;;;;0;0
+1814;Order, Forward;Order, Forward;18;0;f;1728,1718;;;;;0;0
+1815;Issue, Sign;Issue, Sign;18;0;f;1715,1702;;;;;0;0
+1816;Issue, Sign, Apostile;Issue, Sign, Apostile;18;0;f;1715,1702,1727;;;;;0;0
+1817;Order, Send, Issue Invoice;Order, Send, Issue Invoice;18;0;f;1728,1701,1726;;;;;0;0
+1818;Send by email, Receive, Sign, Send;Send by email, Receive, Sign, Send;18;0;f;1721,1700,1702,1701;;;;;0;0
+1819;Send by email, Receive, Sign, Apostile, Send;Send by email, Receive, Sign, Apostile, Send;18;0;f;1721,1700,1702,1727,1701;;;;;0;0
+2401;AC01;AC01;24;0;f;;;;Incorrect account number;;0;0
+2402;AG06;AG06;24;0;f;;;;Incorrect creditor agent;;0;0
+2403;AGNT ;AGNT ;24;0;f;;;;Incorrect agent;;0;0
+2404;AM01;AM01;24;0;f;;;;Specified message amount is equal to zero;;0;0
+2405;AM02;AM02;24;0;f;;;;Not allowed amount;;0;0
+2406;AM03;AM03;24;0;f;;;;Not allowed currency;;0;0
+2407;AM10;AM10;24;0;f;;;;Invalid control sum;;0;0
+2408;AM18;AM18;24;0;f;;;;Invalid number of transactions;;0;0
+2409;BE01;BE01;24;0;f;;;;Identification of end customer is not consistent with associated account number;;0;0
+2410;BE09;BE09;24;0;f;;;;Country code is missing or invalid;;0;0
+2411;CH03;CH03;24;0;f;;;;Value in Requested Execution Date or Requested Collection Date is too far in the future;;0;0
+2412;CH04;CH04;24;0;f;;;;Value in Requested Execution Date or Requested Collection Date is too far in the past;;0;0
+2413;CH07;CH07;24;0;f;;;;Element is not to be used at B- and C-Level;;0;0
+2414;CH09;CH09;24;0;f;;;;Mandate changes are not allowed;;0;0
+2415;CH10;CH10;24;0;f;;;;Information on mandate changes are missing;;0;0
+2416;CH11;CH11;24;0;f;;;;Value in Creditor Identifier is incorrect;;0;0
+2417;CH12;CH12;24;0;f;;;;Element Creditor Identifier is not unambiguously at B-Level (SEPA Direct Debit only);;0;0
+2418;CH14;CH14;24;0;f;;;;Element Original Debtor Account is not to be used (SEPA Direct Debit only);;0;0
+2419;CH15;CH15;24;0;f;;;;Element content includes more than 140 characters;;0;0
+2420;CH16;CH16;24;0;f;;;;Element content formally incorrect;;0;0
+2421;CH17;CH17;24;0;f;;;;Element not admitted;;0;0
+2422;CH19;CH19;24;0;f;;;;Values in Interbank Settlement Date or Requested Collection Date will be set to the next banking business day or TARGET day (SEPA Direct Debit only);;0;0
+2423;CH20;CH20;24;0;f;;;;Decimal points not compatible with currency;;0;0
+2424;CH21;CH21;24;0;f;;;;Required compulsory element missing;;0;0
+2425;CH22;CH22;24;0;f;;;;CORE and B2B not permitted within one message (SEPA Direct Debit only);;0;0
+2426;CURR;CURR;24;0;f;;;;Incorrect currency;;0;0
+2427;DT01;DT01;24;0;f;;;;Invalid date;;0;0
+2428;DT06;DT06;24;0;f;;;;Execution date has been modified in order for transaction to be processed ;;0;0
+2429;DU01;DU01;24;0;f;;;;Message identification is not unique;;0;0
+2430;DU02;DU02;24;0;f;;;;Payment information block is not unique;;0;0
+2431;DU05;DU05;24;0;f;;;;Instruction ID is not unique;;0;0
+2432;FF01;FF01;24;0;f;;;;Invalid file format;;0;0
+2433;MD01;MD01;24;0;f;;;;No mandate;;0;0
+2434;MS03;MS03;24;0;f;;;;Other reasons (returned by the agent without stating the reason);;0;0
+2435;RC01;RC01;24;0;f;;;;Bank identifier incorrect;;0;0
+2436;RR12;RR12;24;0;f;;;;Invalid party identification (Swiss Direct Debit only);;0;0
+3400;RCBCY(USD);RCBCY(USD);34;0;f;DEUTSCHE BANK TRUST COMPANY AMERICAS  SWIFT: BKTRUS33  A/c No.: 04089014;;;;;0;0
+3401;RCBCY(EUR);RCBCY(EUR);34;0;f;VTB BANK (DEUTSCHLAND) AG, FRANKFURT  SWIFT: OWHBDEFF  A/c No.: 0101097392;;;;;0;0
+3402;RCBCY(RUR);RCBCY(RUR);34;0;f;VTB BANK, MOSCOW  SWIFT: VTBRRUMM  Acc. No.: 30111810455550000038  ;;;;;0;0
+3403;VTB24, MOSCOW (RUB);VTB24, MOSCOW (RUB);34;0;f;CORR. ACC. 30101810100000000716; BIC 044525716;;;;;0;0
+3404;BANK VTB, MOSCOW (RUB);BANK VTB, MOSCOW (RUB);34;0;f;Corr. acc. 30101810700000000187; BIC 044525187;;;;;0;0
+3405;Hellenic (USD);Hellenic (USD);34;0;f;DEUTSCHE BANK TRUST CO, AMERICAS  SWIFT: BKTRUS33;;;;;0;0
+3406;Hellenic (EUR);Hellenic (EUR);34;0;f;DEUTSCHE BANK AG, FRANKFURT  SWIFT: DEUTDEFF;;;;;0;0
+3407;Hellenic (RUB);Hellenic (RUB);34;0;f;JSC VTB BANK, MOSCOW  SWIFT: VTBRRUMM;;;;;0;0
+3408;Laiki (USD);Laiki (USD);34;0;f;HSBC BANK USA  SWIFT: MRMDUS33  ACC. 000-04539-0;;;;;0;0
+3409;Laiki (EUR);Laiki (EUR);34;0;f;COMMERZBANK  SWIFT: COBADEFF  ACC. 400-8721417-00 EUR;;;;;0;0
+3410;Laiki (RUB);Laiki (RUB);34;0;f;JSC VTB BANK  SWIFT:VTBRRUMM  ACC. 30111810755550000068;;;;;0;0
+3411;RCB(GBP);RCB(GBP);34;0;f;BARCLAYS BANK, LONDON  SWIFT: BARCGB22  Acc. No.: 03412032;;;;;0;0
+3412;RCB(CHF);RCB(CHF);34;0;f;CREDIT SUISSE, ZURICH  SWIFT: CRESCHZZ80A  Acc. No.: 0835 0845913 33 000;;;;;0;0
+3413;RCB,LUX(RUB);;34;0;f;RCB BANK LTD, CYPRUS  SWIFT: RCBLCY2I  Acc: 040020002;;;;;0;0
+3414;RCB,LUX(USD)L;;34;0;f;BANQUE INTERNATIONALE A LUXEMBOURG, LUXEMBOURG  SWIFT: BILLLULL  Acc: LU390025310072360800;;;;;0;0
+3415;RCB,LUX(USD)G;;34;0;f;VTB BANK (DEUTSCHLAND) AG, GERMANY  SWIFT: OWHBDEFF  Acc: 0106216419;;;;;0;0
+3416;RCB,LUX(EUR)L;;34;0;f;BANQUE INTERNATIONALE A LUXEMBOURG, LUXEMBOURG  SWIFT: BILLLULL  Acc: LU700029310072361400;;;;;0;0
+3417;RCB,LUX(EUR)G;;34;0;f;COMMERZBANK AG, GERMANY  SWIFT: COBADEFF  Acc: 400872004700;;;;;0;0
+3418;RCB,LUX(GBP);;34;0;f;BANQUE INTERNATIONALE A LUXEMBOURG, LUXEMBOURG  SWIFT: BILLLULL  Acc: LU380022310072366400;;;;;0;0
+3419;RCB,LUX(CHF);;34;0;f;BANQUE INTERNATIONALE A LUXEMBOURG, LUXEMBOURG  SWIFT: BILLLULL  Acc: LU970024310072369700;;;;;0;0
+3420;RCBCY(USD)New;RCBCY(USD)New;34;0;f;CITIBANK N.A., NEW YORK  SWIFT: CITI US 33  A/c No.: 36320313;;;;;0;0
+3421;RCBCY(USD)3;RCBCY(USD)3;34;0;f;CITIBANK N.A., NEW YORK  SWIFT : CITIUS33  A/c No.: 36320313;;;;;0;0
+3500;CYP;CYP;35;0;f;ffff00;;;CY;(the “Company”) Incorporated in Cyprus under the Companies Law, Cap. 113;0.19;0
+3501;BVI;BVI;35;0;f;3399ff;;;BV;(Incorporated under the BVI Business Companies Act (2004) of the British Virgin Islands);0;0
+3502;Seychelles;Seychelles;35;0;f;3399ff;;;SCh;Incorporated in the Republic of Seychelles under the International Business Companies Act 24 of 1994;0;0
+3503;Russian Federation;Russian Federation;35;0;f;ff9900;;;RU;;0;0
+3504;Belize;Belize;35;0;f;3399ff;;;BZ;;0;0
+3505;West Indies;West Indies;35;0;f;3399ff;;;WI;;0;0
+3506;Channel Island;Channel Island;35;0;f;3399ff;;;ChI;;0;0
+3507;Cayman Islands;Cayman Islands;35;0;f;3399ff;;;CI;;0;0
+3508;Panama;Panama;35;0;f;3399ff;;;PN;;0;0
+3509;Malta;Malta;35;0;f;9999ff;;;ML;;0;0
+3510;Nevis;Nevis;35;0;f;3399ff;;;NV;;0;0
+3511;Switzerland;Switzerland;35;0;f;9999ff;;;SW;;0;0
+3512;Isle of Man;Isle of Man;35;0;f;3399ff;;;IM;;0;0
+3513;United Kingdom;United Kingdom;35;0;f;9999ff;;;UK;;0;0
+3514;Marshall Islands;Marshall Islands;35;0;f;3399ff;;;MI;;0;0
+3515;Hong Kong;Hong Kong;35;0;f;ff0000;;;HK;;0;0
+3516;Gibraltar;Gibraltar;35;0;f;;;;GT;;0;0
+3517;UAE;UAE;35;0;f;;;;UAE;;0;0
+3518;Luxembourg;LUX;35;0;f;;;;LUX;;0;0
+5700;Settlor;Settlor;57;0;f;;;;;;0;0
+5701;Trustee;Trustee;57;0;f;;;;;;0;0
+5702;Beneficiary;Beneficiary;57;0;f;;;;;;0;0
+5703;Appointer;Appointer;57;0;f;;;;;;0;0
+5704;Protector;Protector;57;0;f;;;;;;0;0
+5705;UBO;UBO;57;0;f;;;;;;0;0
+5706;Director;Director;57;0;f;;;;;;0;0
+5707;Secretary;Secretary;57;0;f;;;;;;0;0
+5708;Authorised Signatory;Authorised Signatory;57;0;f;;;;;;0;0
+5709;Attorney;Attorney;57;0;f;;;;;;0;0
+5710;Borrower;;57;0;f;;;;;;0;0
+5711;Creditor;;57;0;f;;;;;;0;0
+5712;Lender;;57;0;f;;;;;;0;0
+5713;Buyer;;57;0;f;;;;;;0;0
+5714;Seller;;57;0;f;;;;;;0;0
+5715;Purchaser;;57;0;f;;;;;;0;0
+5716;Contractor;;57;0;f;;;;;;0;0
+5717;Party;;57;0;f;;;;;;0;0
+5718;Other side;;57;0;f;;;;;;0;0
+5719;Principal;;57;0;f;;;;;;0;0
+5720;Agent;;57;0;f;;;;;;0;0
+5721;Transferee;;57;0;f;;;;;;0;0
+5722;Grantor;;57;0;f;;;;;;0;0
+5723;Witness;;57;0;f;;;;;;0;0
+5724;Owner;;57;0;f;;;;;;0;0
+5725;Mortgagee;;57;0;f;;;;;;0;0
+5726;Third person;;57;0;f;;;;;;0;0
+5727;Landlord;;57;0;f;;;;;;0;0
+5728;Tenant;;57;0;f;;;;;;0;0
+5729;Fiduciary;;57;0;f;;;;;;0;0
+5730;Chargor;;57;0;f;;;;;;0;0
+5731;Chargee;;57;0;f;;;;;;0;0
+5732;Pledgor;;57;0;f;;;;;;0;0
+5733;Pledgee;;57;0;f;;;;;;0;0
+5734;Shareholder;;57;0;f;;;;;;0;0
+5735;Company;;57;0;f;;;;;;0;0
+5736;Sponsor;;57;0;f;;;;;;0;0
+5737;Investor;;57;0;f;;;;;;0;0
+5738;Assistant;;57;0;f;;;;;;0;0
+5739;Custodian;;57;0;f;;;;;;0;0
+5740;Client;;57;0;f;;;;;;0;0
+5741;Executor;;57;0;f;;;;;;0;0
+5742;Debtor;;57;0;f;;;;;;0;0
+5743;Customer;;57;0;f;;;;;;0;0
+5744;Issuer;;57;0;f;;;;;;0;0
+5745;Receiver;;57;0;f;;;;;;0;0
+5746;Payer;;57;0;f;;;;;;0;0
+5747;Lessor;;57;0;f;;;;;;0;0
+5748;Employer;;57;0;f;;;;;;0;0
+5749;Employee;;57;0;f;;;;;;0;0
+5750;Charterer;;57;0;f;;;;;;0;0
+5751;Consultant;;57;0;f;;;;;;0;0
+5752;Transferor;;57;0;f;;;;;;0;0
+5753;Authorised Contact;;57;0;f;;;;;;0;0
+5754;Administrator;;57;0;f;;;;;;0;0
+5755;Fund manager;;57;0;f;;;;;;0;0
+5756;E-Bank user;ebank;57;0;f;;;;;;0;0
