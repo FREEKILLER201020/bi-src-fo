@@ -91,16 +91,16 @@ $new_users[]=['username'=>'alex'];
 
 
 $new_users[]=[
-    'username'=>'lukyanov',
-    'firstname'=>'Andrey',
-    'surname'=>'Lukyanov',
-    'email'=>'Lukyanov@suekag.com'
+    'username'=>'alex',
+    'firstname'=>'Alexander',
+    'surname'=>'Titov',
+    'email'=>' '
 ];
 $new_users[]=[
     'username'=>'kirill',
     'firstname'=>'Kirill',
     'surname'=>'Burchenko',
-    'email'=>'Sova@suekag.com'
+    'email'=>' '
 ];
 
 
