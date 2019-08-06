@@ -32,13 +32,17 @@ $out .= $this->html->form_chekbox('active', $res[active], 'Active', '', 0, 'span
 // $stage_id = $this->data->listitems('stage_id', $res[stage_id], 'stage', 'span12','Select from list');
 // $out .= "<label>Stage</label>$stage_id";
 
-$sql="SELECT id, name FROM listitems WHERE list_id=7  ORDER by id";
-$out.=$this->html->htlist('stage_id',$sql,$res[stage_id],'Select Stage',"",'','span12');
+$sql = "SELECT id, name FROM listitems WHERE list_id=7  ORDER by id";
+$out .= "<label>Stage</label>$category_id";
+$out .= $this->html->htlist('stage_id', $sql, $res[stage_id], 'Select Stage', "", '', 'span12');
 
-$category_id = $this->data->listitems('category_id', $res[category_id], 'category', 'span12');
+// $category_id = $this->data->listitems('category_id', $res[category_id], 'category', 'span12');
+
+$sql = "SELECT id, name FROM listitems WHERE list_id=8  ORDER by id";
 $out .= "<label>Category</label>$category_id";
-$out .= $this->html->form_textarea('descr', $res[descr], 'Descr', '', 0, '', 'span12');
+$out .= $this->html->htlist('category_id', $sql, $res[category_id], 'Select Category', "", '', 'span12');
 
+$out .= $this->html->form_textarea('descr', $res[descr], 'Descr', '', 0, '', 'span12');
 $out .= $this->html->form_confirmations();
 $out .= $this->html->form_submit('Save');
 $out .= $this->html->form_end();
