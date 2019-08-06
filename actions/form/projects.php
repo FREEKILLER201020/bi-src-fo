@@ -19,8 +19,8 @@ $out .= $this->html->form_hidden('id', $id);
 $out .= $this->html->form_hidden('reference', $reference);
 $out .= $this->html->form_hidden('refid', $refid);
 
-$user_id = $this->data->listitems('user_id', $res[user_id], 'user', 'span12');
-$out .= "<label>User</label>$user_id";
+// $user_id = $this->data->listitems('user_id', $res[user_id], 'user', 'span12');
+// $out .= "<label>User</label>$user_id";
 $out .= $this->html->form_text('name', $res[name], 'Name', '', 0, 'span12');
 $out .= $this->html->form_date('date', $res[date], 'Date', '', 0, 'span12');
 $out .= $this->html->form_date('date_from', $res[date_from], 'Date from', '', 0, 'span12');
