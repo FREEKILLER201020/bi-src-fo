@@ -12,7 +12,7 @@ $this->data->writeconfig('update_version', $update_version);
 
 // Create Project stages list
 $list_id = 7;
-$sql = "SELECT \"add_new_list\" ($list_id, 'Project Stages','stage',array['Planned','In progress','Completed']);";
+$sql = "SELECT \"add_new_list\" ($list_id, 'Project Stages','stage',array['Planned','In progress','Completed','Abadoned']);";
 $this->db->getVal($sql);
 
 // Create Project category list

@@ -15,7 +15,7 @@ $sql = "$sql order by $sortby";
 $sql2 = " limit $limit offset $offset;";
 $sql = $sql1 . $sql . $sql2;
 //$out.= $sql;
-$fields = array('id', 'user_id', 'name', 'date', 'date_from', 'date_to', 'date_check', 'active', 'stage_id', 'category_id', 'descr');
+$fields = array('id', 'user', 'name', 'date_from', 'date_to', 'category', 'stage', '');
 //$sort= $fields;
 $out = $this->html->tablehead($what, $qry, $order, 'no_addbutton', $fields, $sort);
 
@@ -26,19 +26,34 @@ $rows = pg_num_rows($cur);if ($rows > 0) {
 
 while ($row = pg_fetch_array($cur)) {
 	$i++;
-	$class = '';
+	$class = 'bold';
 	//$type=$this->data->get_name('listitems',$row[type]);
-	if ($row[id] == 0) {
+	if ($row[stage_id] == 700) {
+		$class = '';
+	}
+	if ($row[stage_id] == 702) {
 		$class = 'd';
 	}
-
+	if ($this->dates->is_earlier($row[date_check], $GLOBALS['today'])) {
+		$class = 'orange';
+	}
+	if ($this->dates->is_earlier($row[date_to], $GLOBALS['today'])) {
+		$class = 'red';
+	}
+	$username = $this->data->username($row['user_id']);
+	$category_name = $this->data->get_name('listitems', $row['category_id']);
+	$stage_name = $this->data->get_name('listitems', $row['stage_id']);
 	$out .= "<tr class='$class'>";
-	$out .= $this->html->edit_rec($what, $row[id], 'ved', $i);
+	// $out .= $this->html->edit_rec($what, $row[id], 'ved', $i);
+	$out .= "<td>$i</td>";
 	$out .= "<td id='$what:$row[id]' class='cart-selectable' reference='$what'>$row[id]</td>";
+	$out .= "<td>$username</td>";
 	$out .= "<td onMouseover=\"showhint('$row[descr]', this, event, '400px');\">$row[name]</td>";
-	$out .= "<td>$row[date]</td>";
-	$out .= "<td>$type</td>";
-	$out .= "<td class='n'>" . $this->html->money($row[amount]) . "</td>";
+	$out .= "<td>" . $this->dates->F_date($row[date_from]) . "</td>";
+	$out .= "<td>" . $this->dates->F_date($row[date_to]) . "</td>";
+	$out .= "<td>$category_name</td>";
+	$out .= "<td>$stage_name</td>";
+	$out .= $this->html->HT_editicons($what, $row[id]);
 	$out .= "</tr>";
 	$totals[2] += $row[qty];
 	if ($allids) {
