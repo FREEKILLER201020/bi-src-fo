@@ -17,6 +17,8 @@ if($name=='')$name=$this->data->get_new_name($what, $GLOBALS[today],'','PRJ-');
 if($date_to=='')$date_to=$this->dates->F_dateadd_month($date_from,3);
 if($date_check=='')$date_check=$this->dates->F_dateadd($date_to,-7);
 
+if($this->dates->is_later($date_check,$date_to))$this->html->error('Date check is later than comletion date');
+
 
 $vals = array(
 	'name' => $name,
