@@ -1,5 +1,5 @@
 <?php
-//Details lists
+//Details projects
 $res = $this->db->GetRow("select * from $what where id=$id");
 $partner = $this->data->detalize('partners', $res[partner_id]);
 $date = $this->html->readRQd('date', 1);
@@ -8,10 +8,16 @@ $out .= $this->data->details_bar($what, $id);
 
 $out .= "<table class='table table-morecondensed table-notfull'>";
 $out .= "<tr><td class='mr'><b>Id: </b></td><td class='mt'>$res[id]</td></tr>";
+$out .= "<tr><td class='mr'><b>User id: </b></td><td class='mt'>$res[user_id]</td></tr>";
 $out .= "<tr><td class='mr'><b>Name: </b></td><td class='mt'>$res[name]</td></tr>";
-$out .= "<tr><td class='mr'><b>Alias: </b></td><td class='mt'>$res[alias]</td></tr>";
+$out .= "<tr><td class='mr'><b>Date: </b></td><td class='mt'>$res[date]</td></tr>";
+$out .= "<tr><td class='mr'><b>Date from: </b></td><td class='mt'>$res[date_from]</td></tr>";
+$out .= "<tr><td class='mr'><b>Date to: </b></td><td class='mt'>$res[date_to]</td></tr>";
+$out .= "<tr><td class='mr'><b>Date check: </b></td><td class='mt'>$res[date_check]</td></tr>";
+$out .= "<tr><td class='mr'><b>Active: </b></td><td class='mt'>$res[active]</td></tr>";
+$out .= "<tr><td class='mr'><b>Stage id: </b></td><td class='mt'>$res[stage_id]</td></tr>";
+$out .= "<tr><td class='mr'><b>Category id: </b></td><td class='mt'>$res[category_id]</td></tr>";
 $out .= "<tr><td class='mr'><b>Descr: </b></td><td class='mt'>$res[descr]</td></tr>";
-$out .= "<tr><td class='mr'><b>Addinfo: </b></td><td class='mt'>$res[addinfo]</td></tr>";
 $out .= "</table>";
 
 if ($res[descr]) {

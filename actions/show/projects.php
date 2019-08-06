@@ -1,5 +1,5 @@
 <?php
-//Show lists
+//Show projects
 if ($sortby == '') {$sortby = "id asc";}
 
 $tmp = $this->html->readRQcsv('ids');
@@ -15,7 +15,7 @@ $sql = "$sql order by $sortby";
 $sql2 = " limit $limit offset $offset;";
 $sql = $sql1 . $sql . $sql2;
 //$out.= $sql;
-$fields = array('id', 'name', 'alias', 'descr', 'addinfo');
+$fields = array('id', 'user_id', 'name', 'date', 'date_from', 'date_to', 'date_check', 'active', 'stage_id', 'category_id', 'descr');
 //$sort= $fields;
 $out = $this->html->tablehead($what, $qry, $order, 'no_addbutton', $fields, $sort);
 
