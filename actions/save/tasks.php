@@ -14,7 +14,7 @@ $stage_id = $this->html->readRQn('stage_id');
 $descr = $this->html->readRQ('descr');
 
 if ($name == '') {
-	$name = $this->data->get_new_name($what, $GLOBALS[today], '', 'PRJ-');
+	$name = $this->data->get_new_name($what, $GLOBALS[today], '', 'TSK-');
 }
 
 if ($date_from == '') {
@@ -55,7 +55,7 @@ if ($id == 0) {
 	$vals[user_id] = $GLOBALS[uid];
 
 }
-echo $this->html->pre_display($_POST, 'Post');
-echo $this->html->pre_display($vals, 'Vals');exit;
+// echo $this->html->pre_display($_POST, 'Post');
+// echo $this->html->pre_display($vals, 'Vals');exit;
 if ($id == 0) {$id = $this->db->insert_db($what, $vals);} else { $id = $this->db->update_db($what, $id, $vals);}
 $body .= $out;

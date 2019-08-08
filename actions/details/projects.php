@@ -30,7 +30,9 @@ $out .= $this->show_docs2obj($id, $what);
 
 $_POST[tablename] = $what;
 $_POST[refid] = $id;
+$_POST[project_id] = $id;
 $_POST[reffinfo] = "&tablename=$what&refid=$id";
+$out .= $this->show('tasks');
 $out .= $this->show('schedules');
 $out .= $this->show('comments');
 $out .= $this->report('posts');

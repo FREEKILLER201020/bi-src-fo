@@ -4,12 +4,29 @@ if ($act == 'edit') {
 	$sql = "select * from $what WHERE id=$id";
 	$res = $this->db->GetRow($sql);
 } else {
-	$sql = "select * from $what WHERE id=$refid";
-	$res2 = $this->db->GetRow($sql);
-	$res[active] = 't';
-}
+	if($tablename=='projects'){
+		$sql = "select * from projects WHERE id=$refid";
+		$project = $this->db->GetRow($sql);
+		$res[active] = 't';
+		$res[project_id] = $project[id];
+		//echo $this->html->pre_display($project,"project");
+	}else{
+		$sql = "select * from tasks WHERE id=$refid";
+		$parent_task = $this->db->GetRow($sql);
+		$project_id=$parent_task[project_id];
+		$sql = "select * from projects WHERE id=$project_id";
+		$project = $this->db->GetRow($sql);
+		$res[active] = 't';
+		$res[project_id] = $project[id];
 
+	}
+
+
+}
+echo $this->html->pre_display($project,"project");
+echo $this->html->pre_display($parent_task,"parent_task");
 $form_opt['well_class'] = "span11 columns form-wrap";
+$form_opt['title'] = "Task of $tablename $project[name]";
 
 $out .= $this->html->form_start($what, $id, '', $form_opt);
 $out .= "<hr>";
@@ -19,6 +36,7 @@ $out .= $this->html->form_hidden('id', $id);
 $out .= $this->html->form_hidden('reference', $reference);
 $out .= $this->html->form_hidden('refid', $refid);
 $out .= $this->html->form_hidden('project_id', $res['project_id']);
+$out .= $this->html->form_hidden('parent_id', $res['parent_id']);
 
 // $user_id = $this->data->listitems('user_id', $res[user_id], 'user', 'span12');
 // $out .= "<label>User</label>$user_id";

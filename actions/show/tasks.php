@@ -5,8 +5,14 @@ if ($sortby == '') {$sortby = "id asc";}
 $tmp = $this->html->readRQcsv('ids');
 if ($tmp != '') {$sql .= " and id in ($tmp)";}
 
-$tmp = $this->html->readRQn('list_id');
-if ($tmp > 0) {$sql .= " and list_id=$tmp";}
+$tmp = $this->html->readRQn('project_id');
+if ($tmp > 0) {$sql .= " and project_id=$tmp";}
+
+$tmp = $this->html->readRQn('parent_id');
+if ($tmp > 0) {$sql .= " and parent_id=$tmp";}
+
+$tmp = $this->html->readRQn('task_id');
+if ($tmp > 0) {$sql .= " and parent_id=$tmp";}
 
 $sql1 = "select *";
 $sql = " from $what a where id>0 $sql";

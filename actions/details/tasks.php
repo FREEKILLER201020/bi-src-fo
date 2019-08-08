@@ -25,13 +25,15 @@ if ($res[descr]) {
 	$out .= "Description:<br><pre>$res[descr]</pre>";
 }
 
-$dname = $this->data->docs2obj($id, $what);
-$out .= "<b>Documents:</b> $dname<br>";
-$out .= $this->show_docs2obj($id, $what);
+// $dname = $this->data->docs2obj($id, $what);
+// $out .= "<b>Documents:</b> $dname<br>";
+// $out .= $this->show_docs2obj($id, $what);
 
 $_POST[tablename] = $what;
 $_POST[refid] = $id;
+$_POST[task_id] = $id;
 $_POST[reffinfo] = "&tablename=$what&refid=$id";
+$out .= $this->show('tasks');
 $out .= $this->show('schedules');
 $out .= $this->show('comments');
 $out .= $this->report('posts');
