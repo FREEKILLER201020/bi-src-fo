@@ -32,13 +32,13 @@ $out .= $this->html->form_date('date_to', $res[date_to], 'Date to', '', 0, 'span
 // $out .= "<label>Stage</label>$stage_id";
 
 $sql = "SELECT id, name FROM listitems WHERE list_id=7  ORDER by id";
-$out .= "<label>Stage</label>$category_id";
+$out .= "<label>Stage</label>";
 $out .= $this->html->htlist('stage_id', $sql, $res[stage_id], 'Select Stage', "", '', 'span12');
 
 // $category_id = $this->data->listitems('category_id', $res[category_id], 'category', 'span12');
 
 $sql = "SELECT id, name FROM listitems WHERE list_id=8  ORDER by id";
-$out .= "<label>Category</label>$category_id";
+$out .= "<label>Category</label>";
 $out .= $this->html->htlist('category_id', $sql, $res[category_id], 'Select Category', "", '', 'span12');
 
 $out .= $this->html->form_textarea('descr', $res[descr], 'Descr', '', 0, '', 'span12');

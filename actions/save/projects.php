@@ -23,14 +23,16 @@ if ($date_to == '') {
 if ($date_check == '') {
 	$date_check = $this->dates->F_dateadd($date_to, -7);
 }
-
+// Дата проверки не может быть позже даты окончания
 if ($this->dates->is_later($date_check, $date_to)) {
 	$this->html->error('Date check is later than comletion date');
 }
-
+// Дата начала не может быть позже даты окончания
 if ($this->dates->is_later($date_from, $date_to)) {
 	$this->html->error('Date from is later than comletion date');
 }
+// Дата проверки не может быть раньше даты начала
+// Дата конца не может быть раньше даты начала
 
 $vals = array(
 	'name' => $name,
