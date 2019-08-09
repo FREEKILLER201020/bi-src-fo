@@ -4,5 +4,5 @@
 - [x] CRUD for Projects
 - [x] CRUD for Tasks
 - [x] Connect Tasks to Projects
-- [ ] Manage documents
+- [x] Manage documents
 - [ ] Connect documents to Projects and tasks

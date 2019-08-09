@@ -26,12 +26,10 @@ class project extends Router
         }
         return self::$hInstance;
     }
-    
-    function sample_function($arg = '')
-    {
-        $f=__FUNCTION__;
-        return include(FW_DIR.'/helpers/f.php');
-    }
+    function get_new_docname($date=''){$f=__FUNCTION__;
+        return include(FW_DIR.'/helpers/f.php');}
+    function update_document($id){$f=__FUNCTION__;
+        return include(FW_DIR.'/helpers/f.php');}
 
     //replace_placeholder
 }

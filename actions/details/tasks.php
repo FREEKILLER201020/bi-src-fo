@@ -25,10 +25,11 @@ if ($res[descr]) {
 	$out .= "Description:<br><pre>$res[descr]</pre>";
 }
 
-// $dname = $this->data->docs2obj($id, $what);
-// $out .= "<b>Documents:</b> $dname<br>";
-// $out .= $this->show_docs2obj($id, $what);
+$dname = $this->data->docs2obj($id, $what);
+$out .= "<b>Documents:</b> $dname<br>";
+$out .= $this->show_docs2obj($id, $what);
 
+unset($_POST[title]);
 $_POST[tablename] = $what;
 $_POST[refid] = $id;
 $_POST[task_id] = $id;
