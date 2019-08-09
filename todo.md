@@ -5,4 +5,7 @@
 - [x] CRUD for Tasks
 - [x] Connect Tasks to Projects
 - [x] Manage documents
-- [ ] Connect documents to Projects and tasks
+- [x] Connect documents to tasks
+- [ ] Connect documents to Projects
+- [ ] Link to Projects from task details
+- [ ] In list of Projects add col with qty of tasks
