@@ -1,30 +1,31 @@
 <?php
 //Edit tasks
+// echo $this->html->pre_display($_GET, "get");
 if ($act == 'edit') {
 	$sql = "select * from $what WHERE id=$id";
 	$res = $this->db->GetRow($sql);
 } else {
-	if($tablename=='projects'){
+	// echo $this->html->pre_display($what, "project");
+	if ($tablename == 'projects') {
 		$sql = "select * from projects WHERE id=$refid";
 		$project = $this->db->GetRow($sql);
-		$res[active] = 't';
 		$res[project_id] = $project[id];
-		//echo $this->html->pre_display($project,"project");
-	}else{
+		// 	//echo $this->html->pre_display($project,"project");
+	} else {
 		$sql = "select * from tasks WHERE id=$refid";
 		$parent_task = $this->db->GetRow($sql);
-		$project_id=$parent_task[project_id];
+		$project_id = $parent_task[project_id];
 		$sql = "select * from projects WHERE id=$project_id";
 		$project = $this->db->GetRow($sql);
-		$res[active] = 't';
 		$res[project_id] = $project[id];
+		$res[parent_id] = $refid;
 
 	}
-
+	$res[active] = 't';
 
 }
-echo $this->html->pre_display($project,"project");
-echo $this->html->pre_display($parent_task,"parent_task");
+// echo $this->html->pre_display($project, "project");
+// echo $this->html->pre_display($parent_task, "parent_task");
 $form_opt['well_class'] = "span11 columns form-wrap";
 $form_opt['title'] = "Task of $tablename $project[name]";
 

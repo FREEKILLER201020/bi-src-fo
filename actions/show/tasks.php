@@ -21,7 +21,7 @@ $sql = "$sql order by $sortby";
 $sql2 = " limit $limit offset $offset;";
 $sql = $sql1 . $sql . $sql2;
 //$out.= $sql;
-$fields = array('id', 'user_id', 'project_id', 'parent_id', 'name', 'date', 'date_from', 'date_to', 'date_check', 'active', 'stage_id', 'descr');
+$fields = array('id', 'project', 'parent', 'name', 'date_from', 'date_to', 'stage', '');
 //$sort= $fields;
 $out = $this->html->tablehead($what, $qry, $order, 'no_addbutton', $fields, $sort);
 
@@ -37,14 +37,30 @@ while ($row = pg_fetch_array($cur)) {
 	if ($row[id] == 0) {
 		$class = 'd';
 	}
+	$stage_name = $this->data->get_name('listitems', $row['stage_id']);
+	// $project_id = $this->html->readRQn('id');
+	$sql = "select * from projects WHERE id=$row[project_id]";
+	$project = $this->db->GetRow($sql);
+
+	$sql = "select * from tasks WHERE id=$row[parent_id]";
+	$parent = $this->db->GetRow($sql);
+
+	if ($parent[name] == "") {
+		$parent[name] = "МЫ ЭТО ЕЩЕ НЕ СДЕЛАЛИ";
+	}
 
 	$out .= "<tr class='$class'>";
-	$out .= $this->html->edit_rec($what, $row[id], 'ved', $i);
+	$out .= "<td>$i</td>";
+	// $out .= $this->html->edit_rec($what, $row[id], 'ved', $i);
 	$out .= "<td id='$what:$row[id]' class='cart-selectable' reference='$what'>$row[id]</td>";
+	$out .= "<td>$project[name]</td>";
+	$out .= "<td>$parent[name]</td>";
+	// $out .= "<td>$row[parent_id]</td>";
 	$out .= "<td onMouseover=\"showhint('$row[descr]', this, event, '400px');\">$row[name]</td>";
-	$out .= "<td>$row[date]</td>";
-	$out .= "<td>$type</td>";
-	$out .= "<td class='n'>" . $this->html->money($row[amount]) . "</td>";
+	$out .= "<td>" . $this->dates->F_date($row[date_from]) . "</td>";
+	$out .= "<td>" . $this->dates->F_date($row[date_to]) . "</td>";
+	$out .= "<td>$stage_name</td>";
+	$out .= $this->html->HT_editicons($what, $row[id]);
 	$out .= "</tr>";
 	$totals[2] += $row[qty];
 	if ($allids) {
