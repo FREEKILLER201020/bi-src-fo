@@ -2,6 +2,7 @@
 //Details tasks
 $res = $this->db->GetRow("select * from $what where id=$id");
 $partner = $this->data->detalize('partners', $res[partner_id]);
+$parent = $res[parent_id];
 $date = $this->html->readRQd('date', 1);
 $out .= "<h1>$res[name]</h1>";
 $out .= $this->data->details_bar($what, $id);
@@ -19,6 +20,10 @@ $out .= "<tr><td class='mr'><b>Date check: </b></td><td class='mt'>$res[date_che
 $out .= "<tr><td class='mr'><b>Active: </b></td><td class='mt'>$res[active]</td></tr>";
 $out .= "<tr><td class='mr'><b>Stage id: </b></td><td class='mt'>$res[stage_id]</td></tr>";
 $out .= "<tr><td class='mr'><b>Descr: </b></td><td class='mt'>$res[descr]</td></tr>";
+$out .= "<tr><td class='mr'><b>Link to project: </b></td><td class='mt'>[url=?act=details&what=projects&id=" . $parent . "[/url]</td></tr>";
+if ($res[parent_id] != 0) {
+	$out .= "<tr><td class='mr'><b>Link to parent: </b></td><td class='mt'>[url=?act=details&what=tasks&id=" . $res[parent_id] . "[/url]</td></tr>";
+}
 $out .= "</table>";
 
 if ($res[descr]) {

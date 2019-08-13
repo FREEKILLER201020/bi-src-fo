@@ -15,7 +15,7 @@ $sql = "$sql order by $sortby";
 $sql2 = " limit $limit offset $offset;";
 $sql = $sql1 . $sql . $sql2;
 //$out.= $sql;
-$fields = array('id', 'user', 'name', 'date_from', 'date_to', 'category', 'stage', '');
+$fields = array('id', 'user', 'name', 'date_from', 'date_to', 'category', 'stage', 'tasks count', '');
 //$sort= $fields;
 $out = $this->html->tablehead($what, $qry, $order, 'no_addbutton', $fields, $sort);
 
@@ -25,6 +25,8 @@ $rows = pg_num_rows($cur);if ($rows > 0) {
 }
 
 while ($row = pg_fetch_array($cur)) {
+	$res = $this->db->GetRow("select count(id) from tasks where project_id=$row[id]");
+	// echo $this->html->pre_display($res, "project");
 	$i++;
 	$class = 'bold';
 	//$type=$this->data->get_name('listitems',$row[type]);
@@ -53,6 +55,7 @@ while ($row = pg_fetch_array($cur)) {
 	$out .= "<td>" . $this->dates->F_date($row[date_to]) . "</td>";
 	$out .= "<td>$category_name</td>";
 	$out .= "<td>$stage_name</td>";
+	$out .= "<td>$res[count]</td>";
 	$out .= $this->html->HT_editicons($what, $row[id]);
 	$out .= "</tr>";
 	$totals[2] += $row[qty];

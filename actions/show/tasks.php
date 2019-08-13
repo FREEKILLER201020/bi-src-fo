@@ -45,16 +45,26 @@ while ($row = pg_fetch_array($cur)) {
 	$sql = "select * from tasks WHERE id=$row[parent_id]";
 	$parent = $this->db->GetRow($sql);
 
-	if ($parent[name] == "") {
-		$parent[name] = "МЫ ЭТО ЕЩЕ НЕ СДЕЛАЛИ";
-	}
+	// if ($parent[name] == "") {
+	// 	$parent[name] = "МЫ ЭТО ЕЩЕ НЕ СДЕЛАЛИ";
+	// }
 
 	$out .= "<tr class='$class'>";
 	$out .= "<td>$i</td>";
 	// $out .= $this->html->edit_rec($what, $row[id], 'ved', $i);
 	$out .= "<td id='$what:$row[id]' class='cart-selectable' reference='$what'>$row[id]</td>";
-	$out .= "<td>$project[name]</td>";
-	$out .= "<td>$parent[name]</td>";
+	if ($project[id] != 0) {
+		$out .= "<td class='mt'>[url=?act=details&what=projects&id=" . $project[id] . "[/url]</td>";
+	} else {
+		$out .= "<td></td>";
+	}
+	if ($parent[id] != 0) {
+		$out .= "<td class='mt'>[url=?act=details&what=tasks&id=" . $parent[id] . "[/url]</td>";
+	} else {
+		$out .= "<td></td>";
+	}
+	// $out .= "<td>$project[name]</td>";
+	// $out .= "<td>$parent[name]</td>";
 	// $out .= "<td>$row[parent_id]</td>";
 	$out .= "<td onMouseover=\"showhint('$row[descr]', this, event, '400px');\">$row[name]</td>";
 	$out .= "<td>" . $this->dates->F_date($row[date_from]) . "</td>";

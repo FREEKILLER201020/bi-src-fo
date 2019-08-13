@@ -24,9 +24,9 @@ if ($res[descr]) {
 	$out .= "Description:<br><pre>$res[descr]</pre>";
 }
 
-// $dname = $this->data->docs2obj($id, $what);
-// $out .= "<b>Documents:</b> $dname<br>";
-// $out .= $this->show_docs2obj($id, $what);
+$dname = $this->data->docs2obj($id, $what);
+$out .= "<b>Documents:</b> $dname<br>";
+$out .= $this->show_docs2obj($id, $what);
 
 $_POST[tablename] = $what;
 $_POST[refid] = $id;
