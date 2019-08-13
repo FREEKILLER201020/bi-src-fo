@@ -5,9 +5,9 @@ if ($sortby=='') {
     $sortby="type_id desc, id desc";
 }
 
-$tmp=($this->html->readRQn("doc_id"));
+$tmp=($this->html->readRQn("user_id"));
 if ($tmp>0) {
-    $sql = "$sql and doc_id=$tmp";
+    $sql = "$sql and user_id=$tmp";
 }
 
 $tmp=($this->html->readRQn("ref_id"));
@@ -32,7 +32,7 @@ $sql = "$sql order by $sortby";
 $sql2=" limit $limit offset $offset;";
 $sql=$sql1.$sql.$sql2;
 //$out.= $sql;
-$fields=array('#','Doc','Link','Type',' ');
+$fields=array('#','User','Link','Type',' ');
 //$sort= $fields;
 
 
@@ -54,14 +54,14 @@ while ($row = pg_fetch_array($cur)) {
 
     $type=$this->data->get_name('listitems', $row[type_id]);
 
-    $document=$this->data->detalize('documents', $row[doc_id], 40);
+    $user=$this->data->username($row[user_id], 40);
     $object=$this->data->detalize($row[ref_table], $row[ref_id], 40);
 
     //$dell="<span  style=\"cursor: pointer; cursor: hand; \" onclick=\"confirmation('?csrf=$GLOBALS[csrf]&act=save&what=$what&partnerid=$row[partnerid]&clientid=$row[clientid]&action=unlink')\">[Unlink]</span>";
     //$dell="<i class='icon-resize-full tooltip-test addbtn' data-original-title='Unlink' onclick=\"confirmation('?csrf=$GLOBALS[csrf]&act=save&what=$what&partnerid=$row[partnerid]&clientid=$row[clientid]&action=unlink')\"></i>";
     
     $out.= "<td>$i</td>
-	<td>$document</td>
+	<td>$user</td>
 	<td>$object</td>
 	<td>$type</td>
 	

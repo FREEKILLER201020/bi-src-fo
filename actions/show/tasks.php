@@ -38,12 +38,8 @@ while ($row = pg_fetch_array($cur)) {
 		$class = 'd';
 	}
 	$stage_name = $this->data->get_name('listitems', $row['stage_id']);
-	// $project_id = $this->html->readRQn('id');
-	$sql = "select * from projects WHERE id=$row[project_id]";
-	$project = $this->db->GetRow($sql);
-
-	$sql = "select * from tasks WHERE id=$row[parent_id]";
-	$parent = $this->db->GetRow($sql);
+	$project_name=$this->data->detalize('projects',$row[project_id]);
+	$task_name=($row[parent_id]>0)?$this->data->detalize('tasks',$row[parent_id]):"--";
 
 	// if ($parent[name] == "") {
 	// 	$parent[name] = "МЫ ЭТО ЕЩЕ НЕ СДЕЛАЛИ";
@@ -53,16 +49,8 @@ while ($row = pg_fetch_array($cur)) {
 	$out .= "<td>$i</td>";
 	// $out .= $this->html->edit_rec($what, $row[id], 'ved', $i);
 	$out .= "<td id='$what:$row[id]' class='cart-selectable' reference='$what'>$row[id]</td>";
-	if ($project[id] != 0) {
-		$out .= "<td class='mt'>[url=?act=details&what=projects&id=" . $project[id] . "[/url]</td>";
-	} else {
-		$out .= "<td></td>";
-	}
-	if ($parent[id] != 0) {
-		$out .= "<td class='mt'>[url=?act=details&what=tasks&id=" . $parent[id] . "[/url]</td>";
-	} else {
-		$out .= "<td></td>";
-	}
+	$out .= "<td>$project_name</td>";
+	$out .= "<td>$task_name</td>";
 	// $out .= "<td>$project[name]</td>";
 	// $out .= "<td>$parent[name]</td>";
 	// $out .= "<td>$row[parent_id]</td>";

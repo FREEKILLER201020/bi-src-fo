@@ -32,6 +32,17 @@ $_POST[tablename] = $what;
 $_POST[refid] = $id;
 $_POST[project_id] = $id;
 $_POST[reffinfo] = "&tablename=$what&refid=$id";
+
+
+$_POST[title]='Parties involved';
+$out.=$this->show('partner2obj');
+$_POST[title]='';
+
+$_POST[ref_table]=$what;
+$_POST[title]='Users involved';
+$out.=$this->show('users2obj');
+$_POST[title]='';
+
 $out .= $this->show('tasks');
 $out .= $this->show('schedules');
 $out .= $this->show('comments');

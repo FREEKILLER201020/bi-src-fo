@@ -10,6 +10,7 @@
 - [x] Connect documents to Projects (надо ли в проекте показывать документы по всем задачам?)
 - [x] Link to Projects from task details (наверняка есть генератор ссылок)
 - [x] In list of Projects add col with qty of tasks
+- [ ] Finish users2obj
 ## Сделать
 - [ ] Добавление участников к проекта
 - [ ] Присвоение задачи участнику/группе
